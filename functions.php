@@ -25,3 +25,19 @@ function portfolio_setup() {
 
 }
 add_action( 'after_setup_theme', 'portfolio_setup' );
+
+function portfolio_scripts() {
+
+    wp_enqueue_style( 
+		'dashicons' 
+	);
+
+    wp_enqueue_script( 
+        'portfolio-adobe-fonts',
+        get_template_directory_uri() . '/src/js/adobe.js',
+        array(),
+        filemtime( get_theme_file_path() . '/src/js/adobe.js' ),
+        true
+    );
+}
+add_action( 'wp_enqueue_scripts',  'portfolio_scripts');
