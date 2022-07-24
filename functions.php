@@ -40,7 +40,6 @@ function portfolio_scripts()
         get_template_directory_uri() . '/src/js/adobe.js',
         array(),
         filemtime(get_theme_file_path('/src/js/adobe.js')),
-        false
     );
 }
 add_action('wp_enqueue_scripts',  'portfolio_scripts');
