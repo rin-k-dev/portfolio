@@ -1,6 +1,6 @@
 <?php
-if (!function_exists('portfolio_setup')) {
-    function portfolio_setup()
+if (!function_exists('portfolio_theme_setup')) {
+    function portfolio_theme_setup()
     {
 
         add_theme_support('wp-block-styles');
@@ -26,9 +26,9 @@ if (!function_exists('portfolio_setup')) {
         ));
     }
 }
-add_action('after_setup_theme', 'portfolio_setup');
+add_action('after_setup_theme', 'portfolio_theme_setup');
 
-function portfolio_scripts()
+function portfolio_theme_scripts()
 {
 
     wp_enqueue_style(
@@ -49,4 +49,4 @@ function portfolio_scripts()
         filemtime(get_theme_file_path('dist/css/app.css'))
     );
 }
-add_action('wp_enqueue_scripts',  'portfolio_scripts');
+add_action('wp_enqueue_scripts',  'portfolio_theme_scripts');
