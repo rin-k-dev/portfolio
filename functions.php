@@ -37,9 +37,9 @@ function portfolio_scripts()
 
     wp_enqueue_script(
         'portfolio-adobe-fonts',
-        get_template_directory_uri() . '/src/js/adobe.js',
+        get_template_directory_uri() . '/dist/js/adobe.js',
         array(),
-        filemtime(get_theme_file_path('/src/js/adobe.js')),
+        filemtime(get_theme_file_path('/dist/js/adobe.js')),
     );
 }
 add_action('wp_enqueue_scripts',  'portfolio_scripts');
