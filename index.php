@@ -19,8 +19,10 @@
 
 <?php if($the_query->have_posts()): while($the_query->have_posts()):
     $the_query->the_post(); ?>
+    <article <?php post_class(); ?>>
     <?php the_post_thumbnail(); ?>
     <?php the_title(); ?>
+    </article>
     <?php wp_reset_postdata(); ?>
 <?php endwhile; ?>
 <?php else : ?>
