@@ -1,3 +1,4 @@
+<button id="page-top" class="page-top"></button>
 <footer class="footer">
     <div class="footer__container">
         <h2>
