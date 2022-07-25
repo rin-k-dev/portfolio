@@ -267,6 +267,42 @@ body {
     }
 }
 
+.main section {
+    padding-top: 30px;
+    padding-left: calc(100% * 15 / 375);
+    padding-right: calc(100% * 15 / 375);
+    border: solid 1px var(--base-color);
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.main section {
+    margin-left: calc(100% * 15 / 375);
+    margin-right: calc(100% * 15 / 375);
+}
+
+@media screen and (min-width: 960px) {
+    .main section {
+        margin-left: calc(100% * 30 / 1280);
+        margin-right: calc(100% * 30 / 1280);
+    }
+
+    .main section h2 {
+        border-bottom: 1px solid var(--base-color);
+        padding: 55px 0 50px;
+        margin: 0 calc(100% * 120 / 1280);
+    }
+}
+
+.main section h2 {
+    font-family: philosopher, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.6rem;
+    color: var(--title-color);
+    padding: 35px 0 30px;
+}
+
 .footer h2 {
     display: none;
 }
@@ -377,4 +413,108 @@ body {
 .main__visual img {
     width: 100%;
     vertical-align: bottom;
+}
+
+main .section-about {
+    margin-top: 110px;
+}
+
+.section-about__contents {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.section-about__contents .section-about__lead {
+    padding-bottom: 27px;
+}
+
+.section-about__contents .section-about__lead p {
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.section-about__contents .section-about__info {
+    font-size: 1.4rem;
+}
+
+.section-about__contents .section-about__info table {
+    margin-bottom: 35px;
+}
+
+.section-about__contents .section-about__info table tr th {
+    color: var(--sub-color);
+    text-align: left;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.section-about__contents .section-about__info table tr td {
+    color: var(--base-color);
+    text-align: left;
+}
+
+.section-about .section-about__contents .section-about__info .section-about__text {
+    text-align: left;
+    padding-bottom: 60px;
+    min-width: 280px;
+    max-width: 920px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+@media screen and (min-width: 960px) {
+    .section-about__contents .section-about__lead {
+        padding-top: 50px;
+    }
+
+    .section-about__contents .section-about__lead p {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .section-about__contents .section-about__info {
+        font-size: 1.6rem;
+    }
+
+    .section-about__contents .section-about__info table {
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+main .section-skills {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    padding-bottom: 9.0rem;
+}
+
+.section-skills__skill-area {
+    min-width: 30.0rem;
+    max-width: 74.0rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.0rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5.6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-skills__skill-area .section-skills__box1,
+.section-skills__skill-area .section-skills__box2 {
+    width: 30.0rem;
+}
+
+.section-skills__skill-area .section-skills__box1 ul>*+*,
+.section-skills__skill-area .section-skills__box2 ul>*+* {
+    --space: 2.0rem;
+    margin-top: var(--space, 1.5rem);
+}
+
+.section-skills__skill-area .section-skills__box1 ul> :nth-child(2),
+.section-skills__skill-area .section-skills__box2 ul> :nth-child(2) {
+    margin-bottom: auto;
 }
