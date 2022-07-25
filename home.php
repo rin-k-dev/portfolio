@@ -3,7 +3,6 @@
     <?php
     $args = array(
         'category_name' => 'works',
-        'order' => 'ASC'
     );
     $the_query = new WP_Query($args);
     ?>
