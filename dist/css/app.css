@@ -140,3 +140,129 @@ body {
     color: var(--title-color);
     text-align: left;
 }
+
+.header__nav {
+    position: fixed;
+    z-index: 999;
+    top: -120%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--body-color);
+    transition: all 0.6s;
+}
+
+.header__nav.active {
+    top: 0;
+}
+
+.nav-items {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+.nav-items__item a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--title-color);
+    font-size: 4.6rem;
+    font-family: philosopher, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 20px;
+}
+
+.header__hamburger {
+    width: 30px;
+    height: 100%;
+}
+
+.hamburger {
+    background-color: transparent;
+    border-color: transparent;
+    z-index: 9999;
+}
+
+.hamburger span {
+    width: 100%;
+    height: 1px;
+    background-color: var(--title-color);
+    position: relative;
+    display: block;
+    transition: ease .4s;
+    ;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.hamburger span:nth-child(2) {
+    top: 0;
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 0.4rem;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    top: -0.5rem;
+    transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 960px) {
+    .header__inner {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .header h1 {
+        font-size: 3.6rem;
+    }
+
+    .header__nav {
+        position: static;
+        transform: initial;
+        background-color: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: end;
+        width: 50%;
+    }
+
+    .nav-items {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: initial;
+        gap: 20px;
+        justify-content: flex-end;
+    }
+
+    .nav-items {
+        padding-top: inherit;
+        padding-bottom: inherit;
+        position: inherit;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    .nav-items__item a {
+        margin-bottom: 0;
+        font-family: philosopher, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2.4rem;
+    }
+}
