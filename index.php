@@ -1,10 +1,4 @@
-<?php
-
-/**
- *  
- */
-get_header();
-?>
+<?php get_header(); ?>
 <main role="main" class="main">
     <?php
     $args = array(
