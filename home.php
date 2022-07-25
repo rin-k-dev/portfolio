@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 <main role="main" class="main">
+    <picture class="main__visual">
+        <source srcset="<?php echo esc_url(get_template_directory_uri() . '/assets/images/top/mainvisual_PC.png'); ?>" media="(min-width:960px)">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/top/mainvisual.png'); ?>" alt="main visual">
+    </picture>
     <?php
     $args = array(
         'category_name' => 'works',
