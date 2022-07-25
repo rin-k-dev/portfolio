@@ -1,9 +1,10 @@
 const ham = document.querySelector("#js-hamburger");
 const nav = document.querySelector("#js-nav");
-
+console.log(ham);
+console.log(nav);
 const onClickHamburger = () => {
-    ham.classList.toggle("active");
-    nav.classList.toggle("active");
+  ham.classList.toggle("active");
+  nav.classList.toggle("active");
 }
 
 ham.addEventListener("click", onClickHamburger);
@@ -11,9 +12,9 @@ ham.addEventListener("click", onClickHamburger);
 const scrollBtn = document.querySelector(".page-top");
 const btnVisibility = () => {
   if (window.scrollY > 400) {
-      scrollBtn.style.visibility = "visible";
+    scrollBtn.style.visibility = "visible";
   } else {
-      scrollBtn.style.visibility = "hidden";
+    scrollBtn.style.visibility = "hidden";
   }
 };
 document.addEventListener("scroll", () => {

@@ -42,6 +42,14 @@ function portfolio_theme_scripts()
         filemtime(get_theme_file_path('dist/js/adobe.js')),
     );
 
+    wp_enqueue_script(
+        'portfolio-app-js',
+        get_theme_file_uri('dist/js/app.js'),
+        array(),
+        filemtime(get_theme_file_path('dist/js/app.js')),
+        true
+    );
+
     wp_enqueue_style(
         'portfolio',
         get_theme_file_uri('dist/css/app.css'),
