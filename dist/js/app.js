@@ -1,7 +1,5 @@
 const ham = document.querySelector("#js-hamburger");
 const nav = document.querySelector("#js-nav");
-console.log(ham);
-console.log(nav);
 const onClickHamburger = () => {
   ham.classList.toggle("active");
   nav.classList.toggle("active");
