@@ -23,7 +23,10 @@
                 <nav class="header__nav" id="js-nav">
                     <?php wp_nav_menu(
                         array(
-                            'theme_location' => 'primary'
+                            'theme_location' => 'primary',
+                            'container' => false,
+                            'items_wrap' => '<ul class="nav__items nav-items">%3$s</ul>',
+                            'add_li_class' => 'nav-items__item'
                         )
                     ); ?>
                 </nav>
