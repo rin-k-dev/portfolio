@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root {
+    --base-color: #333;
+    --body-color: #ECE4E1;
+    --title-color: #C1A37D;
+    --sub-color: #EAC5B6;
+}
+
+html {
+    font-size: 62.5%;
+    /* 16px * 62.5% = 10px */
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 375px;
+}
+
+body {
+    color: var(--base-color);
+    font-family: source-han-sans-japanese, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    background-color: var(--body-color);
+}
+
+ol, ul, menu {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h1 {
+    font-family: philosopher, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.6rem;
+    color: var(--title-color);
+    text-align: left;
+}
+
+h2 {
+    font-family: philosopher, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.6rem;
+    color: var(--title-color);
+    padding: 35px 0 30px;
+}
