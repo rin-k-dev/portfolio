@@ -523,3 +523,28 @@ main .section-skills {
     margin-top: 10rem;
     margin-bottom: 6rem;
 }
+
+.smf-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.smf-form .smf-item {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.smf-item__col--label {
+    text-align: left;
+    margin-bottom: 1.3rem;
+}
+
+.smf-item__col--controls {
+    text-align: left;
+}
+
+.smf-text-control__control {
+    width: 100%;
+}
