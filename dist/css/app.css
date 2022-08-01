@@ -518,3 +518,8 @@ main .section-skills {
 .section-skills__skill-area .section-skills__box2 ul> :nth-child(2) {
     margin-bottom: auto;
 }
+
+.snow-monkey-form {
+    margin-top: 10rem;
+    margin-bottom: 6rem;
+}
