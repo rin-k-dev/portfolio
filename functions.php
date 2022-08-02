@@ -15,7 +15,7 @@ if ( ! function_exists('portfolio_theme_setup') ) {
 			add_theme_support('html5', array(
 			'style',
 			'script'
-		));
+			));
 
 		add_theme_support('post-thumbnails');
 
