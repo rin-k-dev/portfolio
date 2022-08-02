@@ -2,18 +2,20 @@
 <footer class="footer">
 	<div class="footer__container">
 		<h2>
-			<a href="<?php echo esc_url(home_url('/')); ?>">
-			<?php bloginfo('name'); ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<?php bloginfo( 'name' ); ?>
 			</a>
 		</h2>
 		<nav class="footer__site-map">
-		<?php if (has_nav_menu('primary')) : ?>
-		<?php wp_nav_menu(
+		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+			<?php
+			wp_nav_menu(
 				array(
 					'theme_location' => 'primary',
-					'container' => false,
+					'container'      => false,
 				)
-			); ?>
+			);
+			?>
 		</nav>
 		<?php endif; ?>
 	</div>
