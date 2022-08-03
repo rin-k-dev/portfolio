@@ -3,3 +3,4 @@ vendor
 *.DS_Store
 /.export/*
 .vscode
+/uploads/smf-uploads/*
